@@ -1,16 +1,13 @@
 {
   "swagger" : "2.0",
   "info" : {
-    "description" : "This is an example of using OAuth2 Application Flow in a specification to describe security to your API.",
-    "version" : "1.0.0",
-    "title" : "Sample Application Flow OAuth2 Project"
+    "description" : "HackCrisis.EveTeamTest2",
+    "version" : "0.1",
+    "title" : "HackCrisis.EveTeam"
   },
   "host" : "virtserver.swaggerhub.com",
-  "basePath" : "/HackCrisisPW/HackCrisis.EveTeam/1.0.0",
+  "basePath" : "/HackCrisisSandbox/HackCrisis.EveTeamTest2/0.1",
   "schemes" : [ "https" ],
-  "security" : [ {
-    "application" : [ "read", "write" ]
-  } ],
   "paths" : {
     "/example" : {
       "get" : {
@@ -35,30 +32,6 @@
           }
         },
         "security" : [ ]
-      }
-    },
-    "/ping2" : {
-      "get" : {
-        "summary" : "Server heartbeat operation",
-        "description" : "na",
-        "parameters" : [ ],
-        "responses" : {
-          "200" : {
-            "description" : "pnig2 OK"
-          }
-        },
-        "security" : [ ]
-      }
-    }
-  },
-  "securityDefinitions" : {
-    "application" : {
-      "type" : "oauth2",
-      "tokenUrl" : "http://example.com/oauth/token",
-      "flow" : "application",
-      "scopes" : {
-        "write" : "allows modifying resources",
-        "read" : "allows reading resources"
       }
     }
   },
